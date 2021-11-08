@@ -62,11 +62,6 @@ class Validator {
         }
     }
 
-    checkactive(input){
-        let inputValue = input.value;
-        console.log(inputValue);
-    }
-
     validcpf(input) {
         let cpf = input.value;
         let errorMessage = `O CPF não é válido`;
@@ -140,8 +135,8 @@ const searchZipcode = () => {
         var jsonData = request.response;
         sendForm(jsonData);
     }
-    
 }
+
 let form = document.getElementById("register-form");
 let submit = document.getElementById("btn-submit");
 let cep = document.getElementById("zipcode")
